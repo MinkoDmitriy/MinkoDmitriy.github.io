@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список гиперссылок и форма</title>
+</head>
+<body>
+<h1>Список гиперссылок и форма</h1>
+
+<h2>Маркированный список гиперссылок:</h2>
+<ul>
+  <li><a href="https://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+  <li><a href="https://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flower_jtca001.jpg/1280px-Flower_jtca001.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flower_jtca001.jpg/1280px-Flower_jtca001.jpg" alt="Ссылка-изображение" width="300" height="200"></a></li>
+  <li><a href="/example.html">Сокращенная ссылка на внутреннюю</a></li>
+  <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+  <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+  <li><a href="page.php?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
+  <li><a href="/page?id=123">Ссылка с параметром id в URL</a></li>
+  <li><a href="./page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+  <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+  <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+  <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+  <li>Контекстная ссылка <a href="about/page">about</a> в тексте абзаца</li>
+  <li><a href="https://www.externalsite.com#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
+  <!-- ссылки из прямоугольных и круглых областей картинки (HTML-тег map) -->
+  <li>
+    <img src="image.jpg" usemap="#imagemap" alt="Картинка с ссылками">
+    <map name="imagemap">
+      <area shape="rect" coords="0,0,50,50" href="rect-link.html" alt="Прямоугольная область">
+      <area shape="circle" coords="75,75,25" href="circle-link.html" alt="Круглая область">
+    </map>
+  </li>
+  <li><a href="#">Ссылка с пустым href</a></li>
+  <li><a>Ссылка без href</a></li>
+  <li><a href="#" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+  <li><a href="#" aria-hidden="true">Запрещенная для индексации поисковиками</a></li>
+  <!-- нумерованный список ссылок с подписями title -->
+  <ol>
+    <li>Первый пункт</li>
+    <li>Второй пункт</li>
+    <li>Третий пункт</li>
+  </ol>
+  <li><a href="ftp://example.com/myfile.ftp">Ссылка на файл на сервере FTP без авторизации</a></li>
+</ul>
+
+<h1>Форма:</h1>
+<form action="submit.php" method="post">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <form action="обработчик.php" method="post">
+    <label for="fio">1. ФИО:</label>
+    <input type="text" id="fio" name="fio" required><br><br>
+
+    <label for="phone">2. Телефон:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="email">3. E-mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="birthdate">4. Дата рождения:</label>
+    <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+    <p>5. Пол:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Мужской</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Женский</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Другой</label><br><br>
+
+    <label>6. Любимый язык программирования:</label><br>
+    <select name="programming_languages[]" multiple>
+      <option value="Pascal">Pascal</option>
+      <option value="C">C</option>
+      <option value="C++">C++</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="PHP">PHP</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+      <option value="Haskell">Haskell</option>
+      <option value="Clojure">Clojure</option>
+      <option value="Prolog">Prolog</option>
+      <option value="Scala">Scala</option>
+    </select><br><br>
+
+    <label for="bio">7. Биография:</label><br>
+    <textarea id="bio" name="bio" rows="4" required></textarea><br><br>
+
+    <input type="checkbox" id="contract" name="contract" required>
+    <label for="contract">8. С контрактом ознакомлен(а)</label><br><br>
+
+    <input type="submit" value="Сохранить">
+  </form>
+  </body>
+  </html>
+</form>
+</body>
+</html>
