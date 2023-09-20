@@ -12,7 +12,26 @@ header
   vertical-align: middle
 }
 
-
+.header
+{
+  text-align: center;
+  width: 100%;
+}
+.logo
+{
+  float: left;
+}
+.title
+{
+  display: inline-block;
+}
+.nav
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
 
 .navv
 {
@@ -58,6 +77,3 @@ body
   font-size: 23px;
   width: 100%;
 }
-
-
-
