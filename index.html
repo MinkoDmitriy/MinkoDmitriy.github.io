@@ -4,15 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Список гиперссылок и форма</title>
-</head>
-<body>
-<h1>Список гиперссылок и форма</h1>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <header>
+    <style>
+      .header
+      {
+        text-align: center;
+        width: 100%;
+      }
+      .logo
+      {
+        float: left;
+      }
+      .title
+      {
+        display: inline-block;
+      }
+      .nav
+      {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+      }
 
-<h2>Маркированный список гиперссылок:</h2>
+    </style>
+    <div class="header">
+      <div class="logo">
+        <img src="https://ae01.alicdn.com/kf/S2e89f9a9b119412f89ad7317646a1e68a.jpg" alt="Logo" width="150px" height="150px">
+      </div>
+      <div class="title">
+        <h1>Pink website</h1>
+      </div>
+      <div class="nav">
+        <a href="https://kubsu.ru" class="navv">Cайт КУБГУ</a>
+        <a href="https://www.kubsu.ru/ru/fktipm" class="navv">Сайт ФКТиПМ</a>
+      </div>
+    </div>
+  </header>
+
+
+<body>
+<h2>Cписок гиперссылок:</h2>
 <ul>
   <li><a href="https://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
   <li><a href="https://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
-  <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flower_jtca001.jpg/1280px-Flower_jtca001.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flower_jtca001.jpg/1280px-Flower_jtca001.jpg" alt="Ссылка-изображение" width="300" height="200"></a></li>
+  <li><a href="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg"><img src="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg" alt="Ссылка-изображение" width="250" height="300"></a></li>
   <li><a href="/example.html">Сокращенная ссылка на внутреннюю</a></li>
   <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
   <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
@@ -44,9 +81,61 @@
   </ol>
   <li><a href="ftp://example.com/myfile.ftp">Ссылка на файл на сервере FTP без авторизации</a></li>
 </ul>
+</body>
 
-<h1>Форма:</h1>
-<form action="submit.php" method="post">
+
+<h2>Таблица:</h2>
+<table id="table">
+  <tr>
+    <th>Колонка 1</th>
+    <th>Колонка 2</th>
+    <th>Колонка 3</th>
+    <th>Колонка 4</th>
+  </tr>
+  <tr>
+    <td>Ячейка 1.1</td>
+    <td>Ячейка 1.2</td>
+    <td>Ячейка 1.3</td>
+    <td>Ячейка 1.4</td>
+  </tr>
+  <tr>
+    <td>Ячейка 2.1</td>
+    <td>Ячейка 2.2</td>
+    <td>Ячейка 2.3</td>
+    <td>Ячейка 2.4</td>
+  </tr>
+  <tr>
+    <td>Ячейка 3.1</td>
+    <td>Ячейка 3.2</td>
+    <td>Ячейка 3.3</td>
+    <td>Ячейка 3.4</td>
+  </tr>
+  <tr>
+    <td>Ячейка 4.1</td>
+    <td>Ячейка 4.2</td>
+    <td>Ячейка 4.3</td>
+    <td>Ячейка 4.4</td>
+  </tr>
+  <tr>
+    <td>Ячейка 5.1</td>
+    <td>Ячейка 5.2</td>
+    <td>Ячейка 5.3</td>
+    <td>Ячейка 5.4</td>
+  </tr>
+  <tr>
+    <td>Ячейка 6.1</td>
+    <td>Ячейка 6.2</td>
+    <td>Ячейка 6.3</td>
+    <td>Ячейка 6.4</td>
+  </tr>
+</table>
+  </body>
+  </html>
+</form>
+
+
+<h2>Форма:</h2>
+<form action="submit.php" method="post" id="form">
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -101,5 +190,12 @@
   </body>
   </html>
 </form>
+
+
+<footer>
+  <p style="text-align: center;">(с) Минко Дмитрий</p>
+</footer>
 </body>
 </html>
+
+
