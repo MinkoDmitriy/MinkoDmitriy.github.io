@@ -1,50 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Список гиперссылок и форма</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <header>
-    <style>
-      .header
-      {
-        text-align: center;
-        width: 100%;
-      }
-      .logo
-      {
-        float: left;
-      }
-      .title
-      {
-        display: inline-block;
-      }
-      .nav
-      {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 50px;
-      }
-
-    </style>
-    <div class="header">
-      <div class="logo">
-        <img src="https://ae01.alicdn.com/kf/S2e89f9a9b119412f89ad7317646a1e68a.jpg" alt="Logo" width="150px" height="150px">
-      </div>
-      <div class="title">
-        <h1>Pink website</h1>
-      </div>
-      <div class="nav">
-        <a href="https://kubsu.ru" class="navv">Cайт КУБГУ</a>
-        <a href="https://www.kubsu.ru/ru/fktipm" class="navv">Сайт ФКТиПМ</a>
-      </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Список гиперссылок и форма</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<header>
+  <div class="header">
+    <div class="logo">
+      <img src="https://ae01.alicdn.com/kf/S2e89f9a9b119412f89ad7317646a1e68a.jpg" alt="Logo" width="150" height="150">
     </div>
-  </header>
+    <div class="title">
+      <h1>Pink website</h1>
+    </div>
+    <div class="nav">
+      <a href="https://kubsu.ru" class="navv">Cайт КУБГУ</a>
+      <a href="https://www.kubsu.ru/ru/fktipm" class="navv">Сайт ФКТиПМ</a>
+    </div>
+  </div>
+</header>
 
 
-<body>
 <h2>Cписок гиперссылок:</h2>
 <ul>
   <li><a href="https://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
@@ -74,14 +49,11 @@
   <li><a href="#" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
   <li><a href="#" aria-hidden="true">Запрещенная для индексации поисковиками</a></li>
   <!-- нумерованный список ссылок с подписями title -->
-  <ol>
-    <li>Первый пункт</li>
-    <li>Второй пункт</li>
-    <li>Третий пункт</li>
-  </ol>
+  <li>Первый пункт</li>
+  <li>Второй пункт</li>
+  <li>Третий пункт</li>
   <li><a href="ftp://example.com/myfile.ftp">Ссылка на файл на сервере FTP без авторизации</a></li>
 </ul>
-</body>
 
 
 <h2>Таблица:</h2>
@@ -129,73 +101,56 @@
     <td>Ячейка 6.4</td>
   </tr>
 </table>
-  </body>
-  </html>
-</form>
 
 
 <h2>Форма:</h2>
-<form action="submit.php" method="post" id="form">
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-  <form action="обработчик.php" method="post">
-    <label for="fio">1. ФИО:</label>
-    <input type="text" id="fio" name="fio" required><br><br>
+<form action="обработчик.php" method="post">
+  <label for="fio">1. ФИО:</label>
+  <input type="text" id="fio" name="fio" required><br><br>
 
-    <label for="phone">2. Телефон:</label>
-    <input type="tel" id="phone" name="phone" required><br><br>
+  <label for="phone">2. Телефон:</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
 
-    <label for="email">3. E-mail:</label>
-    <input type="email" id="email" name="email" required><br><br>
+  <label for="email">3. E-mail:</label>
+  <input type="email" id="email" name="email" required><br><br>
 
-    <label for="birthdate">4. Дата рождения:</label>
-    <input type="date" id="birthdate" name="birthdate" required><br><br>
+  <label for="birthdate">4. Дата рождения:</label>
+  <input type="date" id="birthdate" name="birthdate" required><br><br>
 
-    <p>5. Пол:</p>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Мужской</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Женский</label><br>
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Другой</label><br><br>
+  <p>5. Пол:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Мужской</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Женский</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Другой</label><br><br>
 
-    <label>6. Любимый язык программирования:</label><br>
-    <select name="programming_languages[]" multiple>
-      <option value="Pascal">Pascal</option>
-      <option value="C">C</option>
-      <option value="C++">C++</option>
-      <option value="JavaScript">JavaScript</option>
-      <option value="PHP">PHP</option>
-      <option value="Python">Python</option>
-      <option value="Java">Java</option>
-      <option value="Haskell">Haskell</option>
-      <option value="Clojure">Clojure</option>
-      <option value="Prolog">Prolog</option>
-      <option value="Scala">Scala</option>
-    </select><br><br>
+  <label>6. Любимый язык программирования:</label><br>
+  <select name="programming_languages[]" multiple>
+    <option value="Pascal">Pascal</option>
+    <option value="C">C</option>
+    <option value="C++">C++</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="PHP">PHP</option>
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    <option value="Haskell">Haskell</option>
+    <option value="Clojure">Clojure</option>
+    <option value="Prolog">Prolog</option>
+    <option value="Scala">Scala</option>
+  </select><br><br>
 
-    <label for="bio">7. Биография:</label><br>
-    <textarea id="bio" name="bio" rows="4" required></textarea><br><br>
+  <label for="bio">7. Биография:</label><br>
+  <textarea id="bio" name="bio" rows="4" required></textarea><br><br>
 
-    <input type="checkbox" id="contract" name="contract" required>
-    <label for="contract">8. С контрактом ознакомлен(а)</label><br><br>
+  <input type="checkbox" id="contract" name="contract" required>
+  <label for="contract">8. С контрактом ознакомлен(а)</label><br><br>
 
-    <input type="submit" value="Сохранить">
-  </form>
-  </body>
-  </html>
+  <input type="submit" value="Сохранить">
 </form>
 
 
 <footer>
   <p style="text-align: center;">(с) Минко Дмитрий</p>
 </footer>
-</body>
 </html>
-
-
