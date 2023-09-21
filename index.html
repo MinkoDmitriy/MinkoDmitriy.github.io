@@ -35,23 +35,22 @@
   <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
   <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
   <li>Контекстная ссылка <a href="about/page">about</a> в тексте абзаца</li>
-  <li><a href="https://www.externalsite.com#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
-  <!-- ссылки из прямоугольных и круглых областей картинки (HTML-тег map) -->
+  <li><a>ссылку на фрагмент страницы стороннего сайта</a></li>
   <li>
-    <img src="image.jpg" usemap="#imagemap" alt="Картинка с ссылками">
-    <map name="imagemap">
-      <area shape="rect" coords="0,0,50,50" href="rect-link.html" alt="Прямоугольная область">
-      <area shape="circle" coords="75,75,25" href="circle-link.html" alt="Круглая область">
-    </map>
+    <img src="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg" alt="Картинка с ссылками" width="250" height="300">
   </li>
   <li><a href="#">Ссылка с пустым href</a></li>
   <li><a>Ссылка без href</a></li>
   <li><a href="#" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
   <li><a href="#" aria-hidden="true">Запрещенная для индексации поисковиками</a></li>
-  <!-- нумерованный список ссылок с подписями title -->
-  <li>Первый пункт</li>
-  <li>Второй пункт</li>
-  <li>Третий пункт</li>
+  <li><a>Нумерованный список ссылок с подписями title</a></li>
+</ul>
+<ol>
+  <li><a href=" ">title</a></li>
+  <li><a href=" ">title</a></li>
+  <li><a href=" ">title</a></li>
+</ol>
+<ul>
   <li><a href="ftp://example.com/myfile.ftp">Ссылка на файл на сервере FTP без авторизации</a></li>
 </ul>
 
@@ -139,7 +138,6 @@
     <option value="Prolog">Prolog</option>
     <option value="Scala">Scala</option>
   </select><br><br>
-
   <label for="bio">7. Биография:</label><br>
   <textarea id="bio" name="bio" rows="4" required></textarea><br><br>
 
@@ -148,7 +146,6 @@
 
   <input type="submit" value="Сохранить">
 </form>
-
 
 <footer>
   <p style="text-align: center;">(с) Минко Дмитрий</p>
