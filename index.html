@@ -35,10 +35,15 @@
   <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
   <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
   <li>Контекстная ссылка <a href="about/page">about</a> в тексте абзаца</li>
-  <li><a href="https://kubsu.ru/">Ссылка на фрагмент страницы стороннего сайта</a></li>
+  <li><a href="https://www.jetbrains.com/ru-ru/products/#type=team">Ссылка на фрагмент страницы стороннего сайта</a></li>
   <li>
-    <img src="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg" alt="Картинка с ссылками" width="250" height="300">
+    <img src="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg" alt="Ссылка на кота" height="25%" width="25%" usemap="#cat">
+    <map name="cat">
+      <area shape="circle" coords="20,20,50" alt="circle" href="https://kubsu.ru">
+      <area shape="rect" coords="60,60,160,120" alt="rect" href="https://www.kubsu.ru/ru/fktipm">
+    </map>
   </li>
+
   <li><a href="#">Ссылка с пустым href</a></li>
   <li><a>Ссылка без href</a></li>
   <li><a href="#" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
@@ -65,8 +70,6 @@
   <tr class="string2"><td>18</td><td colspan="3">19 и 20 и 21</td></tr>
   <tr class="string1"><td>22</td><td>23</td><td>24</td><td>25</td></tr>
 </table>
-</table>
-
 
 <h2>Форма:</h2>
 <form action="обработчик.php" method="post">
@@ -82,13 +85,11 @@
   <label for="birthdate">4. Дата рождения:</label>
   <input type="date" id="birthdate" name="birthdate" required><br><br>
 
-  <p>5. Пол:</p>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Мужской</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Женский</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Другой</label><br><br>
+  <label>5 Пол:</label>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Мужской</label>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Женский</label><br><br>
 
   <label>6. Любимый язык программирования:</label><br>
   <select name="programming_languages[]" multiple>
