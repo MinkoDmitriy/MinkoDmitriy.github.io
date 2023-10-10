@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Задание 4</title>
+</head>
+
+<body>
+<header class = "header-content mb-2">
+  <div class = "container p-0 rounded">
+    <div class = "title-logo">
+      <img src="https://i.ytimg.com/vi/yTzm5RzZ5l8/maxresdefault.jpg" id = "logo" alt="logo pic">
+      <p id="page-title">Pink website</p>
+    </div>
+
+    <div class="ps-3">
+      <nav>
+        <a href="#list">List</a>
+        <a href="#table">Table</a>
+        <a href="#form">Form</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class = "content">
+  <div class = "container p-4 mb-2 rounded" id = "table">
+    <p id="font-size1">Таблица:</p>
+    <table class = "table-bordered ">
+      <tr class="chet">
+        <th>Колонка 1</th>
+        <th>Колонка 2</th>
+        <th>Колонка 3</th>
+        <th>Колонка 4</th>
+      </tr>
+      <tr class="nechet">
+        <td>Ячейка 1.1</td>
+        <td>Ячейка 1.2</td>
+        <td colspan="2">Ячейка 1.3 и 1.4</td>
+      </tr>
+      <tr class="chet">
+        <td colspan="2">Ячейка 2.1 и 2.2</td>
+        <td>Ячейка 2.3</td>
+        <td>Ячейка 2.4</td>
+      </tr>
+      <tr class="nechet">
+        <td colspan="3">Ячейка 3.1, 3.2 и 3.3</td>
+        <td>Ячейка 3.4</td>
+      </tr>
+      <tr class="chet">
+        <td>Ячейка 4.1</td>
+        <td>Ячейка 4.2</td>
+        <td>Ячейка 4.3</td>
+        <td>Ячейка 4.4</td>
+      </tr>
+      <tr class="nechet">
+        <td>Ячейка 5.1</td>
+        <td>Ячейка 5.2</td>
+        <td>Ячейка 5.3</td>
+        <td>Ячейка 5.4</td>
+      </tr>
+      <tr class="chet">
+        <td colspan="4">Ячейка 6.1, 6.2, 6.3 и 6.4</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul class = "container p-4 ps-5 mb-2 rounded" id = "list">
+    <p id="font-size2">Список гиперссылок:</p>
+    <li><a href="https://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+    <li><a href="https://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
+    <li><a href="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg"><img src="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg" alt="Ссылка-изображение" width="250" height="300" class = "rounded"></a></li>
+    <li><a href="/example.html">Сокращенная ссылка на внутреннюю</a></li>
+    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="page.php?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
+    <li><a href="/page?id=123">Ссылка с параметром id в URL</a></li>
+    <li><a href="./page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+    <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+    <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+    <li>Контекстная ссылка <a href="about/page">about</a> в тексте абзаца</li>
+    <li><a href="https://www.jetbrains.com/ru-ru/products/#type=team">Ссылка на фрагмент страницы стороннего сайта</a></li>
+    <li>
+      <img src="https://i.pinimg.com/originals/ee/c6/e8/eec6e87b622d57f35d40061d4889f47e.jpg" alt="Ссылка на кота" width="250" height="300" class = "rounded" usemap="#cat">
+      <map name="cat">
+        <area shape="circle" coords="20,20,50" alt="circle" href="https://kubsu.ru">
+        <area shape="rect" coords="60,60,160,120" alt="rect" href="https://www.kubsu.ru/ru/fktipm">
+      </map>
+    </li>
+
+    <li><a href="#">Ссылка с пустым href</a></li>
+    <li><a>Ссылка без href</a></li>
+    <li><a href="#" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href="#" aria-hidden="true">Запрещенная для индексации поисковиками</a></li>
+    <li>
+      <span>Нумерованный список ссылок с подписями title </span>
+      <ol>
+        <li>
+          <a href = "https://yandex.com" title = "Yandex"> Яндекс </a>
+        </li>
+        <li>
+          <a href = "https://google.com" title = "Google"> Гугл </a>
+        </li>
+        <li>
+          <a href = "https://youtube.com" title = "Youtube"> Ютуб </a>
+        </li>
+      </ol>
+    </li>
+    <li><a href="ftp://example.com/myfile.ftp">Ссылка на файл на сервере FTP без авторизации</a></li>
+  </ul>
+
+  <div class = "container p-4 mb-2 rounded" id = "form">
+    <p id="font-size3">Форма:</p>
+    <form action="#">
+      <label for="fio">1. ФИО:</label>
+      <input type="text" id="fio" name="fio" required><br><br>
+
+      <label for="phone">2. Телефон:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="email">3. E-mail:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="birthdate">4. Дата рождения:</label>
+      <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+      <label>5 Пол:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Мужской</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Женский</label><br><br>
+
+      <label>6. Любимый язык программирования:</label><br>
+      <select name="programming_languages[]" multiple>
+        <option value="Pascal">Pascal</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Haskell">Haskell</option>
+        <option value="Clojure">Clojure</option>
+        <option value="Prolog">Prolog</option>
+        <option value="Scala">Scala</option>
+      </select><br><br>
+      <label for="bio">7. Биография:</label><br>
+      <textarea id="bio" name="bio" rows="4" required></textarea><br><br>
+
+      <input type="checkbox" id="contract" name="contract" required>
+      <label for="contract">8. С контрактом ознакомлен(а)</label><br><br>
+
+      <input type="submit" value="Сохранить">
+    </form>
+  </div>
+</div>
+
+<div class = "container p-0 p-0">
+  <footer>
+    <p class="text-center pt-4 p-0"> by Minko Dmitriy</p>
+  </footer>
+</div>
+</body>
+</html>
