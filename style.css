@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     width: 100%;
     color: #d4d4d7;
-    background-color: #2d2a2e;
+    background-color: #000000;
     font-family: "JetBrains Mono";
     font-size: 20px;
     display: flex;
@@ -15,8 +15,8 @@ header {
     flex-direction: row;
     width: 100%;
     margin-top: -5px;
-    background-color: #363337;
-    border-bottom: 3px solid #4b454b;
+    background-color: #000000;
+    border-bottom: 3px solid #061567;
 }
 
 aside {
@@ -24,8 +24,8 @@ aside {
     width: 100%;
     flex-direction: row;
     display: flex;
-    background-color: #363337;
-    border-bottom: 2px solid #ffd866;
+    background-color: #000000;
+    border-bottom: 2px solid #061567;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -44,8 +44,8 @@ div.tasks {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #4b454b;
-    border: #ffd866 solid 2px;
+    background-color: #000000;
+    border: #061567 solid 2px;
     border-radius: 5px;
     padding: 10px;
     min-width: 25%;
@@ -54,9 +54,9 @@ div.tasks {
 footer {
     order: 4;
     width: 100%;
-    background-color: #363337;
+    background-color: #000000;
     text-align: center;
-    border-top: #ffd866 solid 2px;
+    border-top: #061567 solid 2px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -83,7 +83,7 @@ nav.header-info {
 nav.aside-link {
     margin: 10px;
     padding: 5px;
-    background-color: #4b454b;
+    background-color: #000000;
     border-radius: 5px;
 }
 
@@ -93,15 +93,15 @@ a.link-to-task {
 }
 
 a:link {
-    color: #ffd866;
+    color: #061567;
 }
 
 a:visited {
-    color: #ffab66;
+    color: #061567;
 }
 
 a:hover {
-    color: #ffd977;
+    color: #061567;
 }
 
 .header-title {
@@ -130,19 +130,19 @@ div.tasks-list {
     text-align: center;
     user-select: none;
     border-radius: 10px;
-    background-color: #ffd866;
-    color: #2d2a2e;
+    background-color: #061567;
+    color: #ded9de;
     padding: 10px;
     margin: 10px;
-    border: #2d2a2e solid 2px;
+    border: #000000;
 }
 
 .div_button:hover {
-    background-color: #ffd977;
+    background-color: #061567;
 }
 
 .div_button:active {
-    background-color: #fdeaa6;
+    background-color: #061567;
 }
 
 .center-text {
